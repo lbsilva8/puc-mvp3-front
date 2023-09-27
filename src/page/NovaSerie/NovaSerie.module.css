@@ -1,0 +1,46 @@
+.fundo{
+    background-image: url('https://api.metro1.com.br/noticias/133343,vai-fugir-da-foliaa-veja-dez-dicas-de-filmes-e-series-para-assisitr-3.jpg');
+    background-size: cover;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.formulario{
+    box-shadow: 4px 8px 4px rgb(0, 0, 0, 0.2);
+    background-color: #bdc4e7d2;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 24px;
+    padding: 4rem;
+    align-items: center;
+    width: 20%;    
+    display: block; 
+    margin-left: 35%;
+}
+
+.formulario label{
+    align-items: left;
+}
+
+.formulario input{
+    align-items: left;
+    background-color: #fffffff8;
+    border-radius: 5px;
+}
+
+.botao{
+    text-align: center;
+}
+
+.botao button{
+    background-color: #020f81;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+}
+
+.botao button{
+    background-color: #020f81;
+    text-align: center;
+    color: #fff;
+}
