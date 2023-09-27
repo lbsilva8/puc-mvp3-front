@@ -39,13 +39,13 @@ Navegue até o diretório que contém o Dockerfile no terminal e seus arquivos d
 Execute **como administrador** o seguinte comando para construir a imagem Docker:
 
 ```
-$ docker build -t PUC_MVP_3_FRONT .
+$ docker build -t puc_mvp_3_front .
 ```
 
 Uma vez criada a imagem, para executar o container basta executar, **como administrador**, seguinte o comando:
 
 ```
-$ docker run -p 3000:3000 PUC_MVP_3_FRONT
+$ docker run -p 3000:3000 puc_mvp_3_front
 ```
 
 Uma vez executando, para acessar o front-end, basta abrir o [http://localhost:8080/#/](http://localhost:3000/#/) no navegador.
