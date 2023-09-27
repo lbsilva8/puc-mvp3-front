@@ -11,17 +11,25 @@
 
 ##  Descrição do projeto
 
-MVP para a disciplina de Full Stack básico da pós-graduação em Desenvolvimento Full Stack da PUC-RJ. <br>
-Foi desenvolvida uma SPA de uma whishlist onde o usuário adicionará os dados a sua lista de desejos. 
+MVP para a disciplina de Full Stack avançado da pós-graduação em Desenvolvimento Full Stack da PUC-RJ. <br>
+Foi desenvolvida um front-end de uma whishlist onde o usuário adicionará os dados a sua lista de desejos e podera ver a lista atualizada, bem como pesquisar animes atravez de uma api externa. 
 
-*A API relacionada a essa aplicação está disponível no link:* [https://github.com/lbsilva8/puc_mvp_1_api](https://github.com/lbsilva8/puc_mvp_1_api)
+*A API relacionada a essa aplicação está disponível no link:* [https://github.com/lbsilva8/puc_mvp_3_api](https://github.com/lbsilva8/puc_mvp_3_api)
 
+*API externa usada: https://kitsu.docs.apiary.io/# (Anime discovery platform), será utilizado a rota GET https://kitsu.io/api/edge/
 
 ## Como executar:
 
-- Faça o download do projeto;
+- Clonar o repositório ou realizar o download do mesmo;
 
-- Abra  o arquivo `index.html` no browser.
+- Executar o Front:
+```
+$ yarn dev
+```
+
+- Uma vez executando, para acessar o front-end, basta abrir o [http://localhost:8080/#/](http://localhost:3000/#/) no navegador.
+
+- Após isso, rodar a api relaciona para que o banco de dados seja ativo: https://github.com/lbsilva8/puc_mvp_3_api
 
 ## Como executar através do Docker:
 
@@ -31,23 +39,25 @@ Navegue até o diretório que contém o Dockerfile no terminal e seus arquivos d
 Execute **como administrador** o seguinte comando para construir a imagem Docker:
 
 ```
-$ docker build -t serie-front .
+$ docker build -t PUC_MVP_3_FRONT .
 ```
 
 Uma vez criada a imagem, para executar o container basta executar, **como administrador**, seguinte o comando:
 
 ```
-$ docker run -p 3000:3000 serie-front
+$ docker run -p 3000:3000 PUC_MVP_3_FRONT
 ```
 
 Uma vez executando, para acessar o front-end, basta abrir o [http://localhost:8080/#/](http://localhost:3000/#/) no navegador.
 
+Após isso, rodar a api relaciona através do docker para que o banco de dados seja ativo: https://github.com/lbsilva8/puc_mvp_3_api
+
 ## Funcionalidades
 
-
-- [x] Cadastro de séries
-- [x] Exclusão de séries
-- [ ] Filtros de busca
+- [x] Página Home
+- [x] Página de cadastro de séries
+- [x] Página que mostra todos os dados cadastrados e possibilita a exclusão de séries
+- [x] Página que mostra todos os dados da categoria anime e possibilita a exclusão de dados
 - [ ] Cadastro de avaliação/comentários
 
 

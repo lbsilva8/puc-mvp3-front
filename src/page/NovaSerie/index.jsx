@@ -69,7 +69,7 @@ return (
           <label>Categoria: </label>
 
           <select id="novaCategoria">
-            <option value="limao">serie</option>
+            <option value="serie">serie</option>
             <option value="anime">anime</option>
             <option value="manga">filme</option>
           </select>
